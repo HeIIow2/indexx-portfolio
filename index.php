@@ -15,7 +15,7 @@
 <header>
     <h1>Hellow2</h1>
 
-    <button onclick="toggle()" class="push">Theme</button>
+    <button class="push theme-button">Theme</button>
 </header>
 
 <div class="container">
