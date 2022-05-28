@@ -66,9 +66,22 @@
         return $echo_str;
     }
 
+
     $root_dir = "../";
 
-    $files = scandir($root_dir);
+    // $files = scandir($root_dir, $sorting_order = SCANDIR_SORT_NONE);
+
+    // https://gist.github.com/gourneau/1415698
+    $files = array();
+    $dir = new DirectoryIterator($root_dir);
+
+    foreach ($dir as $fileinfo) {
+        $files[$fileinfo->getMTime()] = $fileinfo->getFilename();
+    }
+
+    //krsort will sort in reverse order
+    krsort($files);
+
     $echo_str = "";
     $mist_echo_str = "";
 
