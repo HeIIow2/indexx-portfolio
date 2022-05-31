@@ -13,9 +13,13 @@
 
 <body>
 <header>
-    <h1>Hellow2</h1>
+    <a id="home" href="https://ln.topdf.de/indexx/">Hellow2</a>
+    <button class="theme-button">Theme</button>
 
-    <button class="push theme-button">Theme</button>
+    <div id="dropdown">
+        <p style="font-size:15px;">&#9776;</p>
+        <a href="https://github.com/HeIIow2/indexx-portfolio">GitHub</a>
+    </div>
 </header>
 
 <div class="container">
